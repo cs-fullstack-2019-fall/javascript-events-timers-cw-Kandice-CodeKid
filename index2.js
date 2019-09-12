@@ -8,13 +8,16 @@ button.addEventListener("click", function (e) {
     // alert('button clicked');
 
     if (can_type!==true)
+        // !! : !==true = false 
     {
         textBox.removeAttribute('disabled');
         e.preventDefault()
+        // !! : set the value of your flag
     }
     else if (can_type===false)
     {
         textBox.setAttribute('disabled','');
+        // !! : set the value of your flag
     }
 
    //
